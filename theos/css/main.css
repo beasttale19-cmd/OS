@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/26125.jpeg');
+    background-size: cover;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.932);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 30px 20px;
+}
+
+.left > a {
+    margin: 5px;
+}
+
+div.right {
+    color:white;
+    font-size:2em;
+}
+
+.net:hover::after {
+    content: "5G";
+    position:absolute;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.battery:hover::after {
+    content: "99%";
+    position:absolute;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.access:hover::after {
+    content: "Connected";
+    position:absolute;
+    right:3%;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.apps {
+    display:flex;
+    flex-direction:column;
+    color:white;
+}
+
+.apps > * > a {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.apps > .left-of-apps {
+    position:fixed;
+    left:0;
+}
+
+.apps > * > * {
+    margin:3vh 10px;
+    transition:0.3s;
+}
+
+.apps > * > *:hover {
+    background-color:rgba(255, 255, 255, 0.027);
+}
+
+.apps > .right-of-apps {
+    position:fixed;
+    right:0;
+}

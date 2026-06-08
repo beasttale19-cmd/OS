@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    color:white;
+    background-color:black;
+}
+
+.pfp {
+    border-radius:500px;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    width:100vw;
+    height:100vh;
+}
+
+.enter {
+    border:2px solid rgb(255, 255, 255);
+    border-radius:7px;
+    padding:3px;
+    background-color:rgb(51, 48, 48);
+    transition:0.3s;
+    margin-bottom:10vw;
+}
+
+.enter:hover {
+    background-color:rgb(37, 36, 36)
+}
+
+
+
+.footer {
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    position:fixed;
+    bottom:0;
+    font-size:2.5em;
+    width:100vw;
+    gap:1vw;
+}
+
+.footer a {
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color:rgb(175, 171, 171);
+}
+
+
+.net:hover::after {
+    content: "5G";
+    position:absolute;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.battery {
+    margin-right:4vw;
+}
+.battery:hover::after {
+    content: "99%";
+    position:absolute;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.access:hover::after {
+    content: "Connected";
+    position:absolute;
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
